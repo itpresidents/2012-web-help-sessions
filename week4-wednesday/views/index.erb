@@ -1,0 +1,14 @@
+<% for post in @posts %>
+  <div>
+    <h3>
+      <%= post.title %>
+    </h3>
+    <p>
+      <%= post.body %>
+    </p>
+    <em style="color:gray;">
+      posted
+      <%= post.created_at.month %> - <%= post.created_at.day %> - <%= post.created_at.year %>
+    </em>
+  </div>
+<% end %>
