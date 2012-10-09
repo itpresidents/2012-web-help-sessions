@@ -8,16 +8,23 @@ class BlogPost
   property :id, Serial
   property :title, String
   property :body, Text
+  # This property is called "created_at" and we will store
+  # the current date and time here when we create a new blog post.
   property :created_at, DateTime
 end
 
 DataMapper.finalize
 
+# The "before do ... end" block is a special block for Sinatra.
+# All code inside this block will be run before every one of the
+# routes. We are using it here to define the "@title" the same for
+# every route.
 before do
   @title = "Steve's Blog"
 end
 
 get '/' do
+  # Here we are setting a new value for "@title"
   @title = "Welcome to Steve's Blog"
 
   @posts = BlogPost.all
@@ -34,6 +41,9 @@ post '/blog/save' do
   new_post.title = params[:title]
   new_post.body = params[:body]
 
+  # Set new_post.created_at to the current date and time.
+  # "DateTime.now" is a function in Ruby to get the current
+  # time on the server and return it as a DateTime object.
   new_post.created_at = DateTime.now
 
   if(new_post.save)
