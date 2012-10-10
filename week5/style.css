@@ -1,0 +1,32 @@
+body {
+  background-image: url('orion_hubble_6000.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+a {
+  display: inline-block;
+}
+
+div {
+  /*border: 1px solid blue;*/
+  float: left;
+  width: 23%;
+  padding: 1% 1% 1% 1%;
+  height: 300px;
+}
+
+/* ID SELECTOR, Match only the element that has:: id="first-div" */
+#first-div {
+  color: #f7a7a7;
+}
+
+h1 {
+  font-family: "Helvetica";
+}
+
+/* CLASS SELECTOR, Match all elements that have:: class="post-title" */
+.post-title {
+  font-size: 18px;
+}

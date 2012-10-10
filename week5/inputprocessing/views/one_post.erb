@@ -1,0 +1,17 @@
+<h1><%= @post.title %></h1>
+
+<script src="http://cloud.github.com/downloads/processing-js/processing-js/processing-1.4.1.js"></script>
+
+<script type="text/processing" data-processing-target="processing-canvas">
+void setup() {
+   size(200, 200);
+   background(100);
+   stroke(255);
+   println('hello web!');
+ }
+ void draw() {
+  fill(#<%= @post.color %>);
+   ellipse(50, 50, 25, 25);
+ }
+</script>
+<canvas id="processing-canvas"> </canvas>
