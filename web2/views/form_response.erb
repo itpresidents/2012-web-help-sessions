@@ -1,0 +1,13 @@
+<% if params[:desserts] == 'brownies' %>
+  You chose the correct answer.
+<% else %>
+  You have bad taste in dessert.
+<% end %>
+
+<% if(params[:yourname] == 'Steve') %>
+  <img src="http://www.kidzone.ws/animals/turkey2.jpg">
+<% elsif(params[:yourname] == 'Clay') %>
+  no image.
+<% else %>
+  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Homework_-_vector_maths.jpg/300px-Homework_-_vector_maths.jpg">
+<% end %>
