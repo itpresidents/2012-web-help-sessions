@@ -1,0 +1,30 @@
+<form action="http://itp.nyu.edu/~sk3453/sinatra/nov28/order/new" method="POST">
+    <input type="text" name="persons_name" placeholder="Enter your name"/>
+    
+    <p>
+        <input type="checkbox" name="flavor[]" value="chocolate" />
+        Chocolate
+    </p>
+    <p>
+        <input type="checkbox" name="flavor[]" value="vanilla" />
+        Vanilla
+    </p>
+    <p>
+        <input type="checkbox" name="flavor[]" value="coffee" />
+        Coffee
+    </p>
+    
+    <p>
+        <input type="checkbox" name="has_sprinkles" value="true" />
+        Check if you want sprinkles
+    </p>
+    
+    <p>
+        <input type="checkbox" name="is_cone" value="true" />
+        Check if you want your icecream in a cone
+    </p>
+    
+    <input type="text" name="scoops" placeholder="Number of scoops" />
+    
+    <input type="submit" value="place your order"/>
+</form>

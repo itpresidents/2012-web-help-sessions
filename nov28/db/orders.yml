@@ -1,0 +1,31 @@
+--- 
+- persons_name: Steve
+  scoops: 34567890
+  flavor: vanilla
+  has_sprinkles: true
+  id: 1
+  is_cone: true
+- persons_name: Sam
+  scoops: 9
+  has_sprinkles: true
+  flavor: chocolate
+  id: 2
+  is_cone: true
+- persons_name: Jorge
+  scoops: 5
+  has_sprinkles: 
+  flavor: coffee
+  id: 3
+  is_cone: 
+- persons_name: Pia
+  scoops: 99999999934567890
+  has_sprinkles: true
+  flavor: chocolatevanillacoffee
+  id: 4
+  is_cone: true
+- persons_name: Vanessa
+  scoops: 100
+  flavor: vanilla
+  has_sprinkles: true
+  id: 5
+  is_cone: 

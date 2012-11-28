@@ -1,0 +1,7 @@
+<h1>All Orders</h1>
+<% for current_order in @all_orders %>
+    <div>
+    <p><%= current_order.persons_name %> wants <%= current_order.scoops %> scoops of <%= current_order.flavor %></p>
+    </div>
+
+<% end %>
