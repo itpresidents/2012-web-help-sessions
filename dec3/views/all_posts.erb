@@ -1,0 +1,8 @@
+<% for this_post in @posts %>
+    <div>
+        <h2><%= this_post.title %></h2>
+        <p><%= this_post.content %></p>
+        <h6><%= this_post.category %></h6>
+        <a href="http://itp.nyu.edu/~sk3453/sinatra/dec3/posts/<%= this_post.id %>">Permalink</a>
+    </div>
+<% end %>

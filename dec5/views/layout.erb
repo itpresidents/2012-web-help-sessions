@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Upload image example</title>
+    <style>
+    body {
+        font-family: 'helvetica';
+        width: 40em;
+        margin: 0 auto;
+    }
+    
+    .current {
+        font-weight: bold;
+        color: red;
+    }
+    </style>
+    
+</head>
+<body id="<%= @nav %>">
+<h1>Image Upload Example : <%= @title %> </h1>
+<%= @oneverypage %>
+<%= @not_on_every_page %>
+<a href="http://itp.nyu.edu/~sk3453/sinatra/dec5/upload">Upload another image</a>
+<a <%= 'class="current"' if @nav == "title" %> href="http://itp.nyu.edu/~sk3453/sinatra/dec5/">Main</a>
+
+<p>
+<%= @nav %>
+</p>
+<%= yield %>
+</body>
+</html>
