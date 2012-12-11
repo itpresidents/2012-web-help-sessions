@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Form Example</title>
+    <style type="text/css">
+      body {
+        font-size: 100%;
+        font-family: Helvetica, sans-serif;
+        width: 820px;
+      }
+      h1 {
+        color: #555;
+        border-bottom: 1px solid #ccc;
+      }
+
+      input[type="text"],
+      textarea {
+        padding: 5px;
+        font: inherit;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+      <h1>Create a new Blog Post</h1>
+
+      <form action="/save" method="POST">
+        <h5><label>Blog Title:</h5>
+        <input type="text" name="title" />
+        <h5>MOOD IMAGE:</h5>
+        <input type="text" name="mood_image" />
+
+        <h5>Blog Content:</h5>
+        <textarea name="content"></textarea>
+
+        <% for tag in @tags %>
+        <p><input type="checkbox" name="tags[]" value="<%= tag.id %>"><%= tag.title %></p>
+        <% end %>
+
+        <input type="submit" value="Submit!" /></p>
+      </form>
+
+  </body>
+</html>
